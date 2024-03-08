@@ -1,0 +1,31 @@
+main {
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: var(--site-color-01);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    opacity: 1;
+    margin-bottom: 0.2%;
+}
+
+/* Styles for home page */
+
+.page-1 {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust the height as needed */
+    background-color: var(--site-color-01);
+    background-image: url(../img/dental_hygiene.jpg); /* Path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: top;
+    padding-right: 5%;
+}
+
+
