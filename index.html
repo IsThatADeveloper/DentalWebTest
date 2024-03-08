@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlow Dental</title>
+
+    <link rel="stylesheet" href="js/event.js">
+
+    <link rel="stylesheet" href="pages/appointment.html">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Sections -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/service.css">
+</head>
+
+<!-- Body Section -->
+
+<body>
+
+    <!-- Nav And Header | Completed -->
+    <header>
+        <section class="upper-head">
+          <h1 class="title-border"> -- PureGlow ◆ Dental -- </h1>
+        </section>
+  
+        <section class="lower-head">
+          <div class="home">
+            <a href="#" class="link">Home</a>
+          </div>
+  
+          <div class="link2">
+            <a href="#" class="link">Services</a>
+          </div>
+  
+          <div class="book-appointment">
+              <a href="#" class="link">Book Appointment</a>
+          </div>
+  
+          <div class="contact">
+              <a href="#" class="link">Contact Us</a>
+          </div>
+        </section>
+        
+    </header>
+
+    <section class="page-1">
+    </section>
+  
+    <!-- My Services Section -->
+    <main>
+
+        <h1 class="service-h1">Our Services</h1>
+
+        <section class="service">
+
+            <div class="our-service">
+                <h2>Our Dental Services</h2>
+                <p>● At Dental Teeth Team, we offer a comprehensive range of dental services to meet all your oral health needs. 
+                    From routine check-ups and cleanings to advanced restorative and cosmetic treatments, our experienced team 
+                    is dedicated to providing exceptional care for every patient.
+                </p>
+            </div>
+
+            <div class="care">
+                <h2>Preventive Care</h2>
+                <ul>
+                    <li>● Routine Dental Exams and Cleanings</li>
+                    <li>● Dental Sealants</li>
+                    <li>● Fluoride Treatments</li>
+                </ul>
+            </div>
+
+            <div class="restore">
+                <h2>Restorative Dentistry</h2>
+                <ul>
+                    <li>● Fillings and Restorations</li>
+                    <li>● Dental Crowns and Bridges</li>
+                    <li>● Root Canal Therapy</li>
+                </ul>
+            </div>
+        </section>
+
+    </main> 
+
+    <section class="animated-section">
+        <div class="animated-section-left">
+            <h1 class="appointment-h1">Book Appointment</h1>
+            <p class="appointment-description">Schedule your appointment today for a healthier smile!</p>
+            <button class="appointmentButton" onclick="openPage()">Click Me</button>
+        </div>
+        <div class="animated-section-right">
+            <h1 class="about-h1">About Us</h1>
+            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ultrices varius. Aenean vel elit eu justo faucibus aliquam. Phasellus in varius leo.</p>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-nth1">
+                <ul>
+                    <li><a href="pages/aboutus.html">ABOUT US</a></li>
+                    <li><a href="pages/socials.html">SOCIAL MEDIA</a></li>
+                    <li><a href="#">ADDRESS</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nth2">
+                <ul>
+                    <li><a href="#">SEARCH FOR DENTISTS</a></li>
+                    <li><a href="#">PHONE NUMBER</a></li>
+                    <li><a href="#">BOOK APPOINTMENT</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+<script>
+    var indexPageUrl = 'pages/appointment.html'; 
+
+    function openPage() {
+        window.location.href = indexPageUrl;
+    }
+
+    // JavaScript to handle scroll animation
+    window.addEventListener('scroll', function() {
+        const distanceFromTop = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        // Define the sections you want to animate
+        const sections = document.querySelectorAll('main, .service, .service-h1, .animated-section, .animation-section, .footer-flex ');
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+
+            if (distanceFromTop >= sectionTop - windowHeight / 1) {
+                section.style.opacity = 1; // Apply the animation when section is halfway visible
+            }
+        });
+    });
+</script>
