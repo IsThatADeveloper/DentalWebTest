@@ -1,0 +1,35 @@
+.animated-section {
+    background-color: var(--background-color);
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 0.2%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.animated-section-right {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to bottom right, var(--site-color-02), var(--site-color-01));
+    transition: all 0.3s ease-in-out; 
+}
+
+.animated-section-left {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to bottom left, var(--site-color-02-hover), var(--site-color-01)); 
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-section-left:hover {
+    height: 100%;
+    width: 90%;
+    border-radius: 0 10% 10% 0;
+    background-color: var(--site-color-02); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.animated-section-left:hover + .animated-section-right {
+    border-radius: 10% 0 0 10%; 
+    transition: all 0.3s ease-in-out; 
+}

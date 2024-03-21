@@ -1,0 +1,36 @@
+main {
+    width: 100%;
+    height: calc(100vh - 22%);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    opacity: 1;
+    margin-bottom: 0.2%;
+    padding-top: 6vh;
+}
+
+/* Styles for home page */
+
+.page-1 {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust the height as needed */
+    background-color: var(--site-color-01);
+    background-image: url(../img/dental_background.jpg); /* Path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+
